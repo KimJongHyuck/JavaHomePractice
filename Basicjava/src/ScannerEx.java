@@ -24,7 +24,7 @@ public class ScannerEx {
 		boolean isSingle = sc.nextBoolean();
 		System.out.print("독신여부는 " + isSingle + "입니다.");
 		
-		
+		sc.close();
 		
 	}
 
