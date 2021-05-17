@@ -33,6 +33,7 @@ public class Q6 {
 		} else {
 			System.out.println("숫자의 범위를 벗어났습니다.");
 		}
+		sc.close();
 	}
 
 }
