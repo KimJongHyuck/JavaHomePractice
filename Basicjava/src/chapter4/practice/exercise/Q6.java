@@ -64,6 +64,7 @@ class MonthSchedule {
 		  System.out.print("날짜(1~30)?");
 	      int day = sc.nextInt();
 	      day--;
+	      System.out.println("입력날짜 : " + day);
 	      if(day < 0 || day > 30) { // 0~29
 	         System.out.println("날짜를 잘못 입력하였습니다.");
 	         return;
