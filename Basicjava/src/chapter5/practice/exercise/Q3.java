@@ -44,14 +44,42 @@ class Won2Dollar extends Converter {
 		
 		return "달러";
 	}
-	
 }
+
+class Km2Mile extends Converter {
+	
+	public Km2Mile(double ratio) {
+		this.ratio = ratio;
+	}
+
+	@Override
+	protected double convert(double src) {
+		
+		return src/ratio;
+	}
+
+	@Override
+	protected String getSrcString() {
+		
+		return "Km";
+	}
+
+	@Override
+	protected String getDestString() {
+		
+		return "mile";
+	}
+}
+
 public class Q3 {
 
 	public static void main(String[] args) {
-		Won2Dollar toDollar = new Won2Dollar(1200); //1달러는 1200원
-		toDollar.run();
+//		Won2Dollar toDollar = new Won2Dollar(1200); //1달러는 1200원
+//		toDollar.run();
 
+		Km2Mile toMile = new Km2Mile(1.6);
+		toMile.run();
+		
 	}
 
 }
